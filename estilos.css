@@ -8,6 +8,7 @@ user-select: none;
 pointer-events: none;
 }
 .contenedor{
+    
     width: 90vw;
     height: 70vh;
 }
@@ -51,3 +52,33 @@ pointer-events: none;
   .pushable:active .front {
     transform: translateY(-2px);
   }
+
+  .divisionI{
+    width: calc(30% - 4px);
+    display: inline-block;
+  }
+
+  .divisionD{
+    vertical-align: top;
+    width: calc(70% - 4px);
+    display: inline-block;
+  }
+.enunciado h3{
+    
+    color: white;
+    background-color: rgb(41, 67, 90);
+    margin: 0;
+}
+
+.enunciado p{
+    
+    font-size: large;
+    color: white;
+    background-color: rgb(41, 67, 90);
+}
+
+.resolucion{
+    
+    height: 700px;
+    background-color: rgb(41, 67, 90);
+}
