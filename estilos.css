@@ -7,6 +7,10 @@ img{
 user-select: none;
 pointer-events: none;
 }
+button{
+  background-color: rgba(0,0,0,0);
+  border:none;
+}
 .contenedor{
     
     width: 90vw;
@@ -30,8 +34,8 @@ pointer-events: none;
 .boton:hover{
     background-color: rgb(89, 254, 254);
 }
-
 .pushable {
+  
     background: hsl(340deg 100% 32%);
     border-radius: 12px;
     border: none;
@@ -40,6 +44,7 @@ pointer-events: none;
     outline-offset: 4px;
   }
   .front {
+    
     display: block;
     padding: 12px 42px;
     border-radius: 12px;
@@ -77,8 +82,32 @@ pointer-events: none;
     background-color: rgb(41, 67, 90);
 }
 
-.resolucion{
-    
-    height: 700px;
+.resolucion{    
+    height: 60vh;
+    padding: 20px calc(40% - 16px) 20px 40%;
     background-color: rgb(41, 67, 90);
+}
+
+.pushableR {
+  
+  background: rgb(27, 102, 137);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.frontR {
+  
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: rgb(25, 148, 235);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushableR:active .front {
+  transform: translateY(-2px);
 }
