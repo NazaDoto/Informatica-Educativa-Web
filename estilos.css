@@ -12,11 +12,15 @@ button{
   border:none;
 }
 .contenedor{
-    
-    width: 90vw;
-    height: 70vh;
+  width: 90vw;
+  height: 80vh;
 }
-
+.navbar{
+  height: 40px;
+}
+.footer{
+  margin:0;
+}
 .carousel{
     height: 400px;
 
@@ -35,7 +39,7 @@ button{
     background-color: rgb(89, 254, 254);
 }
 .pushable {
-  
+  display: inline-block;
     background: hsl(340deg 100% 32%);
     border-radius: 12px;
     border: none;
@@ -45,7 +49,7 @@ button{
   }
   .front {
     
-    display: block;
+    display: inline-block;
     padding: 12px 42px;
     border-radius: 12px;
     font-size: 1.25rem;
@@ -62,10 +66,19 @@ button{
     width: calc(30% - 4px);
     display: inline-block;
   }
+  .divisionI2{
+    width: calc(50% - 4px);
+    display: inline-block;
+  }
 
   .divisionD{
     vertical-align: top;
     width: calc(70% - 4px);
+    display: inline-block;
+  }
+  .divisionD2{
+    vertical-align: top;
+    width: calc(50% - 4px);
     display: inline-block;
   }
 .enunciado h3{
@@ -89,7 +102,7 @@ button{
 }
 
 .pushableR {
-  
+  display: inline-block;
   background: rgb(27, 102, 137);
   border-radius: 12px;
   border: none;
@@ -99,7 +112,7 @@ button{
 }
 .frontR {
   
-  display: block;
+  display: inline-block;
   padding: 12px 42px;
   border-radius: 12px;
   font-size: 1.25rem;
@@ -110,4 +123,111 @@ button{
 
 .pushableR:active .front {
   transform: translateY(-2px);
+}
+.teoriaDiv{
+  height: 70vh;
+  background-color: rgb(30, 65, 80);
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+.titulo{
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.titulo2{
+  font-size: 100px;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.teoria{    
+  width: 70%;
+  color: white;
+  margin: 0;
+  position: relative;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.pushable2 {
+  text-align: center;
+  background-color: rgb(0, 110, 118);
+  border-radius: 12px;
+  border: none;
+  padding: 0px;
+}
+.front2 {
+  margin:0px;
+  display: block;
+  padding: 2px 4px; 
+  font-size: 20px;
+  color: white;
+}
+
+.front2:active{
+  transform: translateY(-2px);
+}
+.front2:hover{
+  background-color: rgb(4, 145, 155);
+}
+
+.sobreAlgo{
+  position:absolute;
+  top: 80%;
+  left: 70%;
+}
+.texto{
+  color:white;
+  display: inline-block;
+  margin-top:5px;
+}
+.punto{
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-text-stroke: 2px black;
+  position:absolute;
+}
+.terminal{
+  left:47.5%;
+  top:5.5%;
+}
+.entrada{
+  left: 48%;
+  top: 16%;
+}
+.decision{
+  left: 50%;
+  top:33%;
+}
+.proceso{
+  left:36%;
+  top:51%;
+}
+.print{
+  left:61%;
+  top:51%;
+}
+.terminalEnd{
+  left:49%;
+  top:77.5%;
+}
+.tituloDiag{
+  color:white;
+  position:absolute;
+  top:10%;
+  left: 10%;
 }

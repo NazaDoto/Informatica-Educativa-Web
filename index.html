@@ -1,81 +1,288 @@
 <!DOCTYPE html>
 <html id="index" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagramas de flujo - Inicio</title>
-    <link rel="icon" type="image/x-icon" href="/recursos/favicon.png">
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagramas de flujo - Inicio</title>
+  <link rel="icon" type="image/x-icon" href="/recursos/favicon.png">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">
-            <img src="/recursos/logo.png" alt=""width="100" height="60">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-              <a class="nav-link" href="/practica.html">Práctica</a>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/recursos/logo.png" alt="" width="80" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/index.html">Teoría</a>
+          <a class="nav-link" href="/practica.html">Práctica</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container contenedor text-center">
+
+    <div class="pushable2 text-center mt-4">
+
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
+        <span class="front2">
+          Problemas
+        </span></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6">
+        <span class="front2">
+          Algoritmos
+        </span></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11">
+        <span class="front2">
+          Formas de expresar algoritmos
+        </span></button>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide teoriaDiv" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+          aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+          aria-label="Slide 12"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+          aria-label="Slide 13"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
+          aria-label="Slide 14"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
+          aria-label="Slide 15"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
+          aria-label="Slide 16"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
+          aria-label="Slide 16"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active teoriaDiv" data-bs-interval="99999">
+          <div class="teoriaDiv justify-content-center text-center">
+            <h1 class="titulo2">Problemas</h1>
           </div>
         </div>
-      </nav>
-    <div class="container mt-4 contenedor text-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="99999">
-                <img src="/recursos/img1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="99999">
-                <img src="/recursos/img2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="99999">
-                <img src="/recursos/img3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div class="carousel-item teoriaDiv" data-bs-interval="99999">
+          <div class="teoriaDiv justify-content-center text-center">
+            <h1 class="titulo">Problemas - Definición</h1>
+            <h1 class="teoria">Son cuestiones o proposiciones dudosas, que se tratan de aclarar o resolver.</h1>
           </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Problemas - Tipos [I]</h1>
+            <h1 class="teoria">Problemas que buscan respuestas:<br>Se debe encontrar algo que se desconoce.</h1>
 
-          <button class="pushable" type="button" onclick="location.href='/practica.html'">
-            <span class="front">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Problemas - Tipos [II]</h1>
+            <h1 class="teoria">Problemas que buscan pruebas:<br>Ya se sabe lo que se desea, solo se busca determinar la
+              relación entre los datos y la
+              respuesta.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Problemas - Tipos [III]</h1>
+            <h1 class="teoria">Problemas de computación:<br>Son problemas que buscan métodos mediante los cuales se
+              pueda derivar una respuesta.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">¿Cómo resolver un problema?</h1>
+            <h1 class="teoria">Necesitamos crear un algoritmo que al ejecutarlo nos devuelva la respuesta deseada.</h1>
+          </div>
+        </div>
+        <div class="carousel-item teoriaDiv" data-bs-interval="99999">
+          <div class="teoriaDiv justify-content-center text-center">
+            <h1 class="titulo2">Algoritmos</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Algoritmos - Definición</h1>
+            <h1 class="teoria">Son una secuencia ordenada de pasos elementales,
+              que lleva a la solución de un problema dado en un tiempo finito.</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Algoritmos - Propiedades [I]</h1>
+            <h1 class="teoria">Tiempo de respuesta:<br>La ejecución de un algoritmo debe finalizar en una cantidad
+              finita de pasos.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-tr" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Algoritmos - Propiedades [II]</h1>
+            <h1 class="teoria">Generalidad:<br>Debe poder ser aplicado a una diversidad de casos del problema que
+              contempla.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-gen" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Algoritmos - Propiedades [III]</h1>
+            <h1 class="teoria">Ausencia de ambigüedad:<br>La representación de cada paso de un algoritmo debe tener una
+              única interpretación.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-am" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item teoriaDiv" data-bs-interval="99999">
+          <div class="teoriaDiv justify-content-center text-center">
+            <h1 class="titulo">Un algoritmo se puede expresar en:</h1>
+            <h1 class="teoria">-Lenguaje común<br>-Pseudocódigo<br>-Diagrama de flujo<br>-Lenguaje de programación</h1>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv justify-content-center text-center">
+            <h1 class="titulo">Lenguaje común</h1>
+            <h1 class="teoria">Es el lenguaje normal que
+              hablamos y escribimos, es útil para comunicar
+              un algoritmo a otra persona.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-len" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Pseudocódigo</h1>
+            <h1 class="teoria">Describe un algoritmo
+              utilizando expresiones en lenguaje natural, pero
+              aplicando la lógica de un programa, y de este
+              modo, expresando su flujo de control.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-pse" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Lenguaje de programación</h1>
+            <h1 class="teoria">Es la forma
+              obligada de expresión de un algoritmo para que
+              pueda ser leído, ejecutado y almacenado en la
+              computadora.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-cod" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h1 class="titulo">Diagrama de flujos</h1>
+            <h1 class="teoria">Es un lenguaje gráfico, es
+              útil para visualizar en forma rápida la secuencia
+              lógica de pasos a seguir para un algoritmo.</h1>
+              <button class="pushable sobreAlgo" id="ejemplo-diag" type="button" onclick="infoElemento(this.id)">
+                <span class="front">
+                  Ejemplo
+                </span></button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="99999">
+          <div class="teoriaDiv">
+            <h2 class="tituloDiag">Elementos de un diagrama<br>de flujos</h2>
+            <button class="punto terminal" id="terminal" onclick="infoElemento(this.id)">🔴</button>
+            <button class="punto entrada" id="entrada" onclick="infoElemento(this.id)">🔴</button>
+            <button class="punto decision" id="decision" onclick="infoElemento(this.id)">🔴</button>
+            <button class="punto print" id="print" onclick="infoElemento(this.id)">🔴</button>
+            <button class="punto proceso" id="proceso" onclick="infoElemento(this.id)">🔴</button>
+            <button class="punto terminalEnd" id="terminal" onclick="infoElemento(this.id)">🔴</button>
+            <img class="mt-4"src="/recursos/diagramaVacio.png" alt="" height="80%" width="40%">
+            <button class="pushable sobreAlgo" type="button" onclick="location.href='/practica.html'">
+              <span class="front">
                 Practicar
               </span></button>
-    </div>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">© 2022 Navarrete & Petrelli</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-            <li class="nav-item"><a href="/practica.html" class="nav-link px-2 text-muted">Práctica</a></li>
-          </ul>
-        </footer>
+          </div>
+        </div>
+
+        
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </div>
+
+    <div class="container mt-4">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2022 Navarrete & Petrelli</p>
+  
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+  
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Teoría</a></li>
+          <li class="nav-item"><a href="/practica.html" class="nav-link px-2 text-muted">Práctica</a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+  </div>
+  
 </body>
 <script src="app.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </html>
