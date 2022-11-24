@@ -1,19 +1,51 @@
 let contador = 0;
-function añadirElemento(elemento) {
+let padre = document.createElement("img");
+function añadirElemento(elemento, max) {
   $.ajax({
     type: 'get',
     url: '/practica.html',
     success: function (data) {
-      if (contador < 5) {
+      if (contador < max) {
+
         const nuevoElemento = document.createElement("button");
         const imagen = document.createElement("img");
         imagen.src = "/recursos/e1/" + elemento + "Flecha.png";
         nuevoElemento.style.display = "block";
-        imagen.height = "80";
-        imagen.width = "130";
+        imagen.id = elemento;
+        if (elemento == "decision") {
+          imagen.height = "120";
+          imagen.width = "180";
+          imagen.style.position = "relative";
+          imagen.style.left = "22%";
+          imagen.style.margin = "0px";
+        } else {
+          imagen.style.position = "relative";
+          imagen.style.left = "50%";
+          imagen.height = "80";
+          imagen.width = "130";
+        }
+        if (padre.id == "decision") {
+          imagen.style.left = "calc(" + imagen.style.left + " - 65%)";
+          imagen.id = "decisionIzq";
+
+        }
+        if (padre.id == "decisionIzq") {
+          imagen.id = "decisionIzq2";
+          imagen.style.position = "absolute";
+          imagen.style.top = "40%";
+          imagen.style.left = "calc(" + imagen.style.left + " + 8%)";
+        }
+        if (padre.id == "decisionIzq2") {
+          imagen.style.position = "absolute";
+          imagen.style.top = "50%";
+          imagen.style.left = "calc(" + imagen.style.left + " + 8%)";
+        }
+        padre = imagen;
+
         nuevoElemento.appendChild(imagen);
         document.getElementById('r1').appendChild(nuevoElemento);
         contador++;
+
       }
 
 
@@ -26,7 +58,7 @@ function añadirElemento(elemento) {
 }
 
 function verificarEjercicio() {
-  if (document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" height="80" width="130"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" height="80" width="130"></button><button style="display: block;"><img src="/recursos/e1/procesoFlecha.png" height="80" width="130"></button><button style="display: block;"><img src="/recursos/e1/printFlecha.png" height="80" width="130"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" height="80" width="130"></button>`) {
+  if (document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/decisionFlecha.png" id="decision" height="120" width="180" style="position: relative; left: 22%; margin: 0px;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="decisionIzq" height="80" width="130" style="position: relative; left: calc(-15%);"></button><button style="display: block;"><img src="/recursos/e1/e2-printFlecha.png" id="decisionIzq2" height="80" width="130" style="position: absolute; left: calc(58%); top: 40%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: absolute; left: calc(58%); top: 50%;"></button>` || document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/procesoFlecha.png" id="proceso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/printFlecha.png" id="print" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: relative; left: 50%;"></button>`) {
     Swal.fire({
       icon: 'success',
       title: 'Correcto',
@@ -151,7 +183,7 @@ function infoElemento(elemento) {
         color: '#fff'
       })
       break;
-      case "ejemplo-len":
+    case "ejemplo-len":
       Swal.fire({
         imageUrl: '/recursos/ej-len.png',
         imageWidth: 300,
@@ -161,7 +193,7 @@ function infoElemento(elemento) {
         color: '#fff'
       })
       break;
-      case "ejemplo-pse":
+    case "ejemplo-pse":
       Swal.fire({
         imageUrl: '/recursos/ej-pse.png',
         imageWidth: 500,
@@ -171,7 +203,7 @@ function infoElemento(elemento) {
         color: '#fff'
       })
       break;
-      case "ejemplo-diag":
+    case "ejemplo-diag":
       Swal.fire({
         imageUrl: '/recursos/ej-diag.png',
         imageWidth: 300,
@@ -181,7 +213,7 @@ function infoElemento(elemento) {
         color: '#fff'
       })
       break;
-      case "ejemplo-cod":
+    case "ejemplo-cod":
       Swal.fire({
         imageUrl: '/recursos/ej-cod.png',
         imageWidth: 520,
