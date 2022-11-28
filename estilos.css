@@ -77,6 +77,7 @@ button{
   display: inline-block !important;
   background-color: rgb(41, 67, 90) !important;
   color: white;
+  margin-right: 40px;
 }
   .divisionD{
     vertical-align: top;
@@ -167,7 +168,25 @@ button{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.margenimg{
+ margin-left: 50%;
+}
+.margenimg2{
+  margin-left:60%;
+  margin-top:20%;
+ }
+ .margenimg3{
+  margin-left:60%;
+  margin-top:13%;
+ }
+ .margenimg4{
+  margin-left:60%;
+  margin-top:25%;
+ }
+ .margenimg5{
+  margin-left:60%;
+  margin-top:21%;
+ }
 .pushable2 {
   text-align: center;
   background-color: rgb(0, 110, 118);
