@@ -56,9 +56,35 @@ function añadirElemento(elemento, max) {
     }
   });
 }
+function añadirBloque(elemento, max) {
+  $.ajax({
+    type: 'get',
+    url: '/practica.html',
+    success: function (data) {
+      if (contador < max) {
 
+        const nuevoElemento = document.createElement("button");
+        const imagen = document.createElement("img");
+        imagen.src = "/recursos/e3/" + elemento + ".png";
+        nuevoElemento.style.display = "block";
+        imagen.style.width = "50%";
+        imagen.style.height = "50%";
+        nuevoElemento.appendChild(imagen);
+        document.getElementById('r1').appendChild(nuevoElemento);
+        contador++;
+
+      }
+
+
+    },
+    error: function (data) {
+      console.log('error');
+
+    }
+  });
+}
 function verificarEjercicio() {
-  if (document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/decisionFlecha.png" id="decision" height="120" width="180" style="position: relative; left: 22%; margin: 0px;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="decisionIzq" height="80" width="130" style="position: relative; left: calc(-15%);"></button><button style="display: block;"><img src="/recursos/e1/e2-printFlecha.png" id="decisionIzq2" height="80" width="130" style="position: absolute; left: calc(58%); top: 40%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: absolute; left: calc(58%); top: 50%;"></button>` || document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/procesoFlecha.png" id="proceso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/printFlecha.png" id="print" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: relative; left: 50%;"></button>`) {
+  if (document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/decisionFlecha.png" id="decision" height="120" width="180" style="position: relative; left: 22%; margin: 0px;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="decisionIzq" height="80" width="130" style="position: relative; left: calc(-15%);"></button><button style="display: block;"><img src="/recursos/e1/e2-printFlecha.png" id="decisionIzq2" height="80" width="130" style="position: absolute; left: calc(58%); top: 40%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: absolute; left: calc(58%); top: 50%;"></button>` || document.getElementById('r1').innerHTML == `<button style="display: block;"><img src="/recursos/e1/inicioFlecha.png" id="inicio" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/ingresoFlecha.png" id="ingreso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/procesoFlecha.png" id="proceso" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/printFlecha.png" id="print" height="80" width="130" style="position: relative; left: 50%;"></button><button style="display: block;"><img src="/recursos/e1/finFlecha.png" id="fin" height="80" width="130" style="position: relative; left: 50%;"></button>` || document.getElementById("r1").innerHTML == `<button style="display: block;"><img src="/recursos/e3/bloqueInicio.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloqueLeer.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloqueSi.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloquePar.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloqueSino.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloqueImpar.png" style="width: 50%; height: 50%;"></button><button style="display: block;"><img src="/recursos/e3/bloqueFin.png" style="width: 50%; height: 50%;"></button>`) {
     Swal.fire({
       icon: 'success',
       title: 'Correcto',
