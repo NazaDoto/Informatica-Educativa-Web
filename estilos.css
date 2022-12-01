@@ -79,6 +79,7 @@ button{
   color: white;
   margin-right: 40px;
 }
+
   .divisionD{
     vertical-align: top;
     width: calc(70% - 4px);
@@ -255,3 +256,7 @@ button{
   top:10%;
   left: 10%;
 }
+.link-nombre{
+  cursor: pointer;
+}
+

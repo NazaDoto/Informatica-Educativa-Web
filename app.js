@@ -252,3 +252,7 @@ function infoElemento(elemento) {
   }
 
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
